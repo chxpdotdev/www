@@ -1,0 +1,106 @@
+baseURL = 'https://javacafe01.github.io/'
+title = "javacafe's site"
+theme = 'risotto'
+author = "javacafe"
+copyright = "© [javacafe](https://javacafe01.github.io)."
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[pagination]
+pagerSize = 3
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-tomorrow-night-eighties"
+
+[params.about]
+title = "javacafe"
+description = "my website and blog *maybe?* (more like rants)"
+logo = "☕"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/javacafe01"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-mastodon"
+title = "Mastodon"
+url = "https://hachyderm.io/javacafe"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-message"
+title = "Matrix"
+url = "https://matrix.to/#/@javacafe:matrix.org"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-discord"
+title = "Discord"
+url = "https://discordapp.com/users/422199626850893824"
+
+[menu]
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
