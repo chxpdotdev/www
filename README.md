@@ -1,2 +1,2 @@
-# homepage
-[link](http://javacafe.sdf.org)
+# site
+[link](https://javacafe01.github.io)
