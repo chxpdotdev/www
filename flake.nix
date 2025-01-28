@@ -1,5 +1,5 @@
 {
-  description = "site";
+  description = "javacafe's site";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -62,8 +62,8 @@
             outputHashAlgo = "sha256";
             # To get a new hash:
             # 1. Replace the existing hash with `pkgs.lib.fakeHash`
-            # 2. Run `nix build` or push to GitHub (it will fail and provide the new hash)
-            # 3. Substitute the new hash (`nix build` should now work)
+            # 2. Run `nix build`
+            # 3. Substitute the new hash
             outputHash = "sha256-tW11HunXUUvv/HQA+raj6gV0f47aeb5Ay37FtGWkzCo=";
           };
         in ''
@@ -90,7 +90,7 @@
 
       devShells.default = pkgs.mkShell {
         buildInputs = nativeBuildInputs;
-        # Link theme to themes folder
+        
         shellHook = ''
           mkdir -p themes
           ln -sf ${inputs.risotto-src} themes/risotto
