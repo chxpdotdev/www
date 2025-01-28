@@ -20,9 +20,16 @@
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
+      git = pkgs.git;
+      go = pkgs.go;
+      hugo = pkgs.hugo;
+      nativeBuildInputs = [go hugo];
 
-      site = pkgs.stdenv.mkDerivation {
+      site = pkgs.stdenv.mkDerivation (finalAttrs: {
+        inherit nativeBuildInputs;
+
         name = "site";
+
         # Exclude themes and public folder from build sources
         src =
           builtins.filterSource
@@ -33,20 +40,48 @@
                 == "themes"
                 || baseNameOf path == "public")))
           self;
-        # Link theme to themes folder and build
-        buildPhase = ''
+
+        buildPhase = let
+          hugoVendor = pkgs.stdenv.mkDerivation {
+            inherit (finalAttrs) src;
+
+            name = "${finalAttrs.name}-hugoVendor";
+            nativeBuildInputs = finalAttrs.nativeBuildInputs ++ [git];
+
+            buildPhase = ''
+              mkdir -p themes
+              ln -s ${inputs.risotto-src} themes/risotto
+              hugo mod vendor
+            '';
+
+            installPhase = ''
+              cp -r _vendor $out
+            '';
+
+            outputHashMode = "recursive";
+            outputHashAlgo = "sha256";
+            # To get a new hash:
+            # 1. Replace the existing hash with `pkgs.lib.fakeHash`
+            # 2. Run `nix build` or push to GitHub (it will fail and provide the new hash)
+            # 3. Substitute the new hash (`nix build` should now work)
+            outputHash = "sha256-tW11HunXUUvv/HQA+raj6gV0f47aeb5Ay37FtGWkzCo=";
+          };
+        in ''
           mkdir -p themes
           ln -s ${inputs.risotto-src} themes/risotto
-          ${pkgs.hugo}/bin/hugo --minify
+          ln -s ${hugoVendor} _vendor
+          hugo --minify
         '';
+
         installPhase = ''
           cp -r public $out
         '';
+
         meta = with pkgs.lib; {
           description = "site";
           platforms = platforms.all;
         };
-      };
+      });
     in {
       packages = {
         inherit site;
@@ -54,7 +89,7 @@
       };
 
       devShells.default = pkgs.mkShell {
-        buildInputs = with pkgs; [hugo go];
+        buildInputs = nativeBuildInputs;
         # Link theme to themes folder
         shellHook = ''
           mkdir -p themes
