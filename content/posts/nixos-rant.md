@@ -47,9 +47,8 @@ On top of all this is NixOS, a Linux distro.
 
 With NixOS, everything on your system is configured with Nix. Your graphical interface, shell, applications, etc. With it, you get rollbacks. Also included is the insane learning curve and difficulty.
 
-<img alt="nixos skill curve graph" src="/images/nixos_curve.png" width="50%" />
-
-> *[Source](https://www.reddit.com/r/NixOS/comments/mwem27/nixos_legacy_of_the_greybeard/)*
+![nixos skill curve graph](/images/nixos_curve.png?width=400)  
+*[Source](https://www.reddit.com/r/NixOS/comments/mwem27/nixos_legacy_of_the_greybeard/)*
 
 My issue with NixOS is the lack of convenience. I don't know about you, but on my system, I install lots of things everyday. It's a pain to do that declaratively every time and to wait for the expressions to be evaluated and built. In addition, with NixOS, you have a huge layer of abstraction on top of your system; when an oopsie happens, it's extremely hard to figure out why.
 
@@ -61,8 +60,7 @@ You might mention that I can manage Gnome and install those packages on NixOS wi
 
 You might also mention that this is just a result of a skill issue.
 
-<img alt="skill issue gif" src="https://i.imgflip.com/80d4m9.gif" width="20%" />
-
+![skill issue gif](/images/skill_issue.gif?width=150)  
 **Stfu.**
 
 My ultimate solution for this rant is to use something well-supported like Fedora and install Nix on top. I can manage my shell and development dependencies with Nix, and use Linux properly and normally for my own convenience. I'll maybe post more details about my setup in a different post.

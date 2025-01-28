@@ -54,7 +54,7 @@
       };
 
       devShells.default = pkgs.mkShell {
-        buildInputs = with pkgs; [hugo];
+        buildInputs = with pkgs; [hugo go];
         # Link theme to themes folder
         shellHook = ''
           mkdir -p themes
