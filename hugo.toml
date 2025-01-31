@@ -43,6 +43,11 @@ title = "Mastodon"
 url = "https://hachyderm.io/@javacafe"
 
 [[params.socialLinks]]
+icon = "fa-solid fa-image"
+title = "Pixelfed"
+url = "https://pixelfed.social/javacafe"
+
+[[params.socialLinks]]
 icon = "fa-solid fa-message"
 title = "Matrix"
 url = "https://matrix.to/#/@javacafe:matrix.org"
