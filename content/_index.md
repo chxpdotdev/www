@@ -3,7 +3,7 @@
 ---
 
 ![pic of my cat](/images/pfp.jpg?width=200)   
-Welcome to my website! Here is a picture of my cat, **Meme**.
+Welcome to my website! Here is a picture of my cat, **Meme**, judging you.
 
 ## What is this site for?
 
