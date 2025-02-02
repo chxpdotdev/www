@@ -11,7 +11,7 @@ This is my personal site. My public persona. All my non-personal socials are lin
 
 ## Setup
 
-My main device is a [Framework 13](https://frame.work/products/laptop13-diy-intel-ultra-1/configuration/new) (Framework 16 otw! 😎). It has the following specs:
+My main device is a [Framework 13](https://frame.work/products/laptop13-diy-intel-ultra-1/configuration/new). It has the following specs:
 - AMD Ryzen 7 7840u 
 - 2.8k 120Hz Matte Display
 - 96 GB of DDR5 RAM
