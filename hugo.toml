@@ -40,7 +40,7 @@ url = "https://github.com/javacafe01"
 [[params.socialLinks]]
 icon = "fa-brands fa-mastodon"
 title = "Mastodon"
-url = "https://hachyderm.io/@javacafe"
+url = "https://mastodon.social/@javacafe01"
 
 [[params.socialLinks]]
 icon = "fa-solid fa-image"
