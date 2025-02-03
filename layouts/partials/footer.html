@@ -1,3 +1,3 @@
 {{ if .Title }} {{ if not (or (eq .Title "About me") (eq .Title "Posts")) }}  {{ partial "giscus.html" . }} {{ end }} {{ end }}
 <p class="copyright">{{ .Site.Copyright | markdownify }}</p>
-<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.{{ if .Title }} {{ if not (or (eq .Title "About me") (eq .Title "Posts")) }} Comments are by <a href="https://giscus.app/">giscus<a/>.{{ end }} {{ end }}</p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
