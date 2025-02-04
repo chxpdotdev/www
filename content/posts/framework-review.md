@@ -2,6 +2,7 @@
 date = '2025-01-29T22:25:16-08:00'
 draft = true
 title = 'Framework more like Framebroke'
+author = 'gokulswam'
 +++
 
 *[frame.work](https://frame.work/)*

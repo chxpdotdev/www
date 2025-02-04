@@ -1,8 +1,8 @@
-baseURL = 'https://blog.gokulswam.me/'
-title = "javacafe's site"
+baseURL = 'https://gokulswam.me/'
+title = "gokulswam's site"
 theme = 'risotto'
-author = "javacafe"
-copyright = "© [javacafe](https://gokulswam.github.io)."
+author = "gokulswam"
+copyright = "© [gokulswam](https://gokulswam.github.io)."
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true

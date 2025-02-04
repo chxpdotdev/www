@@ -2,8 +2,8 @@
 title = "About me"
 description = "What do I do in the world? (Hint: almost nothing... lol)"
 date = "2025-01-26"
-aliases = ["about-me", "about-javacafe", "contact"]
-author = "javacafe"
+aliases = ["about-me", "about-gokulswam", "contact"]
+author = "gokulswam"
 +++
 
 I'm an electrical engineering graduate student living in San Diego, CA. I'm doing my Master's in EE with a focus in VLSI.

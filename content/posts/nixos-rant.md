@@ -2,6 +2,7 @@
 date = '2025-01-26T23:28:43-08:00'
 draft = false
 title = 'NixOS, the ~~best~~ most overhyped distro for desktop'
+author = 'gokulswam'
 +++
 
 ## Nix, the best package manager
