@@ -35,12 +35,12 @@ logo = "☕"
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/javacafe01"
+url = "https://github.com/gokulswam"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-mastodon"
 title = "Mastodon"
-url = "https://mastodon.social/@javacafe01"
+url = "https://mastodon.social/@gokulswam"
 
 [[params.socialLinks]]
 icon = "fa-solid fa-image"

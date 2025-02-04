@@ -32,9 +32,9 @@ I run Linux. I like an OS where I can customize it to my needs. As for my distro
 
 |     |     |
 | --- | --- |
-| *github* | [javacafe01](https://github.com/javacafe01) |
+| *github* | [gokulswam](https://github.com/gokulswam) |
 | *discord* | javacafe01 |
 | *matrix* | @javacafe:matrix.org |
-| *mastodon* | [mastodon.social/@javacafe01](https://mastodon.social/@javacafe01) |
+| *mastodon* | [mastodon.social/@gokulswam](https://mastodon.social/@gokulswam) |
 | *pixelfed (my cat's page)* | [javacafe](https://pixelfed.social/javacafe) |
 
