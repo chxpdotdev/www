@@ -1,8 +1,8 @@
-baseURL = 'https://javacafe01.github.io/'
+baseURL = 'https://gokulswam.github.io/'
 title = "javacafe's site"
 theme = 'risotto'
 author = "javacafe"
-copyright = "© [javacafe](https://javacafe01.github.io)."
+copyright = "© [javacafe](https://gokulswam.github.io)."
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
