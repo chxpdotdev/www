@@ -1,7 +1,6 @@
 baseURL: "https://site.gokulswam.me/"
 languageCode: en-us
 title: "Gokul Swami's site"
-enableGitInfo: true
 theme: dead-simple
 menu:
   main:

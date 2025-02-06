@@ -23,7 +23,7 @@
       git = pkgs.git;
       go = pkgs.go;
       hugo = pkgs.hugo;
-      nativeBuildInputs = [git go hugo];
+      nativeBuildInputs = [go hugo];
 
       site = pkgs.stdenv.mkDerivation (finalAttrs: {
         inherit nativeBuildInputs;
@@ -43,9 +43,10 @@
 
         buildPhase = let
           hugoVendor = pkgs.stdenv.mkDerivation {
-            inherit (finalAttrs) src nativeBuildInputs;
+            inherit (finalAttrs) src;
 
             name = "${finalAttrs.name}-hugoVendor";
+            nativeBuildInputs = finalAttrs.nativeBuildInputs ++ [git];
 
             buildPhase = ''
               mkdir -p themes
