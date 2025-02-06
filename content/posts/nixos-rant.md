@@ -3,6 +3,8 @@ date = '2025-01-26T23:28:43-08:00'
 draft = false
 title = 'NixOS, the ~~best~~ most overhyped distro for desktop'
 author = 'gokulswam'
+toc = true
+bold = true
 +++
 
 ## Nix, the best package manager
@@ -42,9 +44,10 @@ On top of all this is NixOS, a Linux distro.
 
 ## NixOS
 
-> **⚠️ Note**
->
-> Everything I'm going to rant about is regarding NixOS as a desktop OS. Not for servers.
+{{< box info >}}
+Everything I'm going to rant about is regarding NixOS as a desktop OS. Not for servers.
+
+{{< /box >}}
 
 With NixOS, everything on your system is configured with Nix. Your graphical interface, shell, applications, etc. With it, you get rollbacks. Also included is the insane learning curve and difficulty.
 
