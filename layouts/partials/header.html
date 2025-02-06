@@ -64,9 +64,9 @@
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}" media="all">
 
     <!-- RSS header-->
-  {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
-  {{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}  
   </head>
 
   <body>

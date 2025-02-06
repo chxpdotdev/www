@@ -15,6 +15,9 @@ menu:
       weight: 3
 
 params:
+  author:
+    name: Gokul Swami
+
   description: "Gokul Swami's site"
   noSearch: true
 
@@ -27,14 +30,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-outputs:
-  home:
-    - html
-    - rss
-    - json
-  page:
-    - html
 
 module:
   imports:
