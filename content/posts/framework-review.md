@@ -27,4 +27,4 @@ The Framework 13 is sleek and has a very premium look. Don't get me wrong, it's 
 
 This laptop also has a 3:2 aspect ratio! This gives more height to the screen, which definitely helps with productivity.
 
-Let's talk up opening up this laptop...
+TODO: Internals
