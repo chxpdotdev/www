@@ -16,11 +16,6 @@
 <link rel="stylesheet" href="{{ "css/risotto.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
 
-{{ if .Title }} {{ if (eq .Title "Verification") }}
-<!-- mastodon verification -->
-<link rel="me" href="https://mastodon.social/@gokulswam"/>
-{{ end }} {{ end }}
-
 <!-- favicon -->
 {{ if os.FileExists "static/favicon.ico" }}<link rel="icon" href="{{ "favicon.ico" | absURL }}">{{ end }}
 {{ if os.FileExists "static/favicon-32x32.png" }}<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">{{ end }}
