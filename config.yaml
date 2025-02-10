@@ -9,10 +9,14 @@ menu:
       weight: 1
     - name: "<u>A</u>bout"
       url: "/about"
-      weight: 3
+      weight: 2
     - name: "<u>P</u>osts"
       url: "/posts"
       weight: 3
+    - name: "<u>C</u>at Pics"
+      url: "/catpics"
+      weight: 4
+
 
 params:
   author:
