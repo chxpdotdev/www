@@ -23,7 +23,7 @@ I run Linux. I like an OS where I can customize it to my needs. As for my distro
 | --- | --- |
 | `Operating System` | Fedora |
 | `Package Manager` | Nix, Flatpak, DNF |
-| `Desktop Environment` | Gnome |
+| `Desktop Environment` | KDE Plasma |
 | `Terminal Emulator` | [Ghostty](https://ghostty.org/) |
 | `Browser` | Firefox |
 | `Editor` | Neovim, VSCode |
