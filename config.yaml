@@ -14,7 +14,7 @@ menu:
       url: "/posts"
       weight: 3
     - name: "<u>C</u>at Pics"
-      url: "/catpics"
+      url: "https://portfolio.pixelfed.social/memelikesfeet"
       weight: 4
 
 

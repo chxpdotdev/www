@@ -32,7 +32,8 @@ I run Linux. I like an OS where I can customize it to my needs. As for my distro
 
 |     |     |
 | --- | --- |
-| *mastodon* | [mastodon.social/@gokulswam](https://mastodon.social/@gokulswam) |
+| *mastodon* | [@gokulswam@mastodon.social](https://mastodon.social/@gokulswam) |
 | *github* | [gokulswam](https://github.com/gokulswam) |
 | *matrix* | [@javacafe:matrix.org](https://matrix.to/#/@javacafe:matrix.org) |
 | *bluesky* | [gokulswam](https://bsky.app/profile/gokulswam.bsky.social) |
+| *pixelfed* | [@memelikesfeet@pixelfed.social](https://pixelfed.social/memelikesfeet) |
