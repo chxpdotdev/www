@@ -1,5 +1,5 @@
 # site
-[link](https://javacafe01.github.io)
+[link](https://gokulswam.github.io)
 
 [hugo-dead-simple](https://github.com/barklan/hugo-dead-simple)
 
