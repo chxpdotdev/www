@@ -17,7 +17,7 @@ My main device is a [Framework 13](https://frame.work/products/laptop13-diy-inte
 - 96 GB of DDR5 RAM
 - 2 TB of Storage
 
-I run Linux. I like an OS where I can customize it to my needs. As for my distro, I chose [Fedora](https://fedoraproject.org/). My system configuration files are [here](https://github.com/javacafe01/nix-config).
+My system configuration files are [here](https://github.com/javacafe01/nix-config).
 
 |     |     |
 | --- | --- |
