@@ -44,11 +44,6 @@ title = "Mastodon"
 url = "https://fosstodon.org/@gokulswam"
 
 [[params.socialLinks]]
-icon = "fa-brands fa-bluesky"
-title = "Bluesky"
-url = "https://bsky.app/profile/gokulswam.me"
-
-[[params.socialLinks]]
 icon = "fa-solid fa-image"
 title = "Pixelfed"
 url = "https://pixelfed.social/memelovesfeet"

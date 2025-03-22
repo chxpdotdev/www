@@ -55,7 +55,6 @@ This is my software setup:
 | --- | --- |
 | *github* | [gokulswam](https://github.com/gokulswam) |
 | *mastodon* | [@gokulswam@fosstodon.org](https://fosstodon.org/@gokulswam) |
-| *bluesky* | [gokulswam](https://bsky.app/profile/gokulswam.me) |
 | *pixelfed* | [@memelovesfeet@pixelfed.social](https://pixelfed.social/memelovesfeet) |
 | *matrix* | [@javacafe:matrix.org](https://matrix.to/#/@javacafe:matrix.org) |
 
