@@ -6,8 +6,8 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # Import theme
-    dead-simple-src = {
-      url = "github:barklan/hugo-dead-simple";
+    risotto-src = {
+      url = "github:joeroe/risotto";
       flake = false;
     };
   };
@@ -50,7 +50,7 @@
 
             buildPhase = ''
               mkdir -p themes
-              ln -s ${inputs.dead-simple-src} themes/dead-simple
+              ln -s ${inputs.risotto-src} themes/risotto
               hugo mod vendor
             '';
 
@@ -68,7 +68,7 @@
           };
         in ''
           mkdir -p themes
-          ln -s ${inputs.dead-simple-src} themes/dead-simple
+          ln -s ${inputs.risotto-src} themes/risotto
           ln -s ${hugoVendor} _vendor
           hugo --minify
         '';
@@ -93,7 +93,7 @@
         
         shellHook = ''
           mkdir -p themes
-          ln -sf ${inputs.dead-simple-src} themes/dead-simple
+          ln -sf ${inputs.risotto-src} themes/risotto
         '';
       };
     });

@@ -1,4 +1,4 @@
-module github.com/javacafe/javacafe01.github.io
+module github.com/gokulswam/gokulswam.github.io
 
 go 1.23.4
 

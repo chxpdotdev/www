@@ -32,8 +32,9 @@ My system configuration files are [here](https://github.com/javacafe01/nix-confi
 
 |     |     |
 | --- | --- |
-| *mastodon* | [@gokulswam@mastodon.social](https://mastodon.social/@gokulswam) |
 | *github* | [gokulswam](https://github.com/gokulswam) |
+| *mastodon* | [@gokulswam@fosstodon.org](https://fosstodon.org/@gokulswam) |
+| *bluesky* | [gokulswam](https://bsky.app/profile/gokulswam.me) |
+| *pixelfed* | [@memelovesfeet@pixelfed.social](https://pixelfed.social/memelovesfeet) |
 | *matrix* | [@javacafe:matrix.org](https://matrix.to/#/@javacafe:matrix.org) |
-| *bluesky* | [gokulswam](https://bsky.app/profile/gokulswam.bsky.social) |
-| *pixelfed* | [@memelikesfeet@pixelfed.social](https://pixelfed.social/memelikesfeet) |
+
