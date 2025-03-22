@@ -21,7 +21,7 @@ pagerSize = 3
 noindex = false
 
 [params.theme]
-palette = "base16-tomorrow-night-eighties"
+palette = "base16-houseki"
 
 [params.about]
 title = "javacafe"

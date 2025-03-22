@@ -2,31 +2,52 @@
 
 ---
 
-![pic of my cat](/images/pfp.jpg?width=200)   
-Welcome to my website! Here is a picture of my cat, **Meme**, judging you.
+![pic of my cat](/images/pfp_nobg.png?width=100)   
+Welcome to my website! I post blogs and my projects here.
 
-## What is this site for?
+## Systems
 
-This is my personal site. My public persona. All my non-personal socials are linked here. 
+My configuration files are [here](https://github.com/javacafe01/nix-config).
 
-## Setup
+### Framework 13
 
-My main device is a [Framework 13](https://frame.work/products/laptop13-diy-intel-ultra-1/configuration/new). It has the following specs:
+My main device used for work on the go and at my university is a [Framework 13](https://frame.work/products/laptop-diy-13-gen-amd/configuration/new). It has the following specs:
 - AMD Ryzen 7 7840u 
 - 2.8k 120Hz Matte Display
-- 96 GB of DDR5 RAM
+- 128 GB of DDR5 RAM
 - 2 TB of Storage
 
-My system configuration files are [here](https://github.com/javacafe01/nix-config).
+This is my software setup:
 
 |     |     |
 | --- | --- |
-| `Operating System` | Fedora |
-| `Package Manager` | Nix, Flatpak, DNF |
-| `Desktop Environment` | KDE Plasma |
+| `Operating System` | NixOS |
+| `Package Manager` | Nix |
+| `Desktop Environment` | Gnome |
 | `Terminal Emulator` | [Ghostty](https://ghostty.org/) |
 | `Browser` | Firefox |
 | `Editor` | Neovim, VSCode |
+
+
+### Home PC
+
+I have a tower at home used for gaming and University work I wish to do on a desk. It has the following specs:
+- AMD Ryzen 5 7600X 
+- Radeon RX 9070XT OC
+- 1440p 165Hz Display
+- 32 GB of DDR5 RAM
+- 1 TB of Storage
+
+This is my software setup:
+
+|     |     |
+| --- | --- |
+| `Operating System` | Windows + NixOS WSL |
+| `Package Manager` | Winget, Nix |
+| `Terminal Emulator` | Windows Terminal |
+| `Browser` | Edge |
+| `Editor` | VSCode |
+
 
 ## Socials
 
