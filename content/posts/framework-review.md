@@ -1,8 +1,9 @@
 +++
-date = '2025-01-29T22:25:16-08:00'
+date = '2025-03-24T02:54:10-07:00'
 draft = true
 title = 'Framework more like Framebroke'
-author = 'gokulswam'
+description = 'Even though Framework laptops are upgradeable, are they really worth it?'
+author = 'Gokul Swami'
 +++
 
 *[frame.work](https://frame.work/)*

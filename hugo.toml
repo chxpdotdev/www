@@ -1,7 +1,7 @@
 baseURL = 'https://gokulswam.me/'
-title = "gokulswam's site"
+title = "Gokul Swami"
 theme = 'risotto'
-author = "gokulswam"
+author = "Gokul Swami"
 copyright = "© Gokul Swami."
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -24,7 +24,7 @@ noindex = false
 palette = "base16-houseki"
 
 [params.about]
-title = "javacafe"
+title = "AKA javacafe(01)"
 description = "my website and blog *maybe?* (more like rants)"
 logo = "☕"
 

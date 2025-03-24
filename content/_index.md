@@ -2,8 +2,11 @@
 
 ---
 
-![pic of my cat](/images/pfp_nobg.png?width=100)   
+![profile picture](/images/pfp_nobg.png?width=100)   
 Welcome to my website! I post blogs and my projects here.
+
+## Projects Overview
+- [CMOS Inverter Design and Layout](/projects/inverter) (draft)
 
 ## Systems
 

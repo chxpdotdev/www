@@ -2,9 +2,8 @@
 date = '2025-01-26T23:28:43-08:00'
 draft = false
 title = 'NixOS, the ~~best~~ most overhyped distro for desktop'
-author = 'gokulswam'
-toc = true
-bold = true
+description = "Is declarative package management worth it?" 
+author = 'Gokul Swami'
 +++
 
 ## Nix, the best package manager
