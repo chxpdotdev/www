@@ -56,8 +56,8 @@ This is my software setup:
 
 |     |     |
 | --- | --- |
-| *github* | [gokulswam](https://github.com/gokulswam) |
+| *github* | [@javacafe01](https://github.com/javacafe01) |
 | *bluesky* | [@javacafe.tech](https://bsky.app/profile/javacafe.tech) |
-| *pixelfed* | [@memelovesfeet@pixelfed.social](https://pixelfed.social/memelovesfeet) |
 | *matrix* | [@javacafe:matrix.org](https://matrix.to/#/@javacafe:matrix.org) |
+| *pixelfed* | [@memelovesfeet@pixelfed.social](https://pixelfed.social/memelovesfeet) |
 
