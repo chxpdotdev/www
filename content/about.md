@@ -8,6 +8,6 @@ author = "Gokul Swami"
 
 I'm a student living in San Diego, CA. I'm doing my Master's in EE with a focus in VLSI Systems.
 
-My undergraduate degree was also in Electrical Engineering. After I received my Bachelor's, I went to work as an Engineer for a utility company on electric grid operations. After a few months, I left to work for an aerospace and defense company as an Embedded Software Engineer for a little over a year.
+My undergraduate degree was also in Electrical Engineering. After I received my Bachelor's, I went to work as an Engineer for a utility company on electric grid operations. After a few months, I left to work for an aerospace and defense company as an Embedded Software Engineer.
 
-The work environment at the aero company was definitely something. It was fast, tense, and demanding. I worked immense hours every week developing new features and new firmware from scratch for different flight-critical systems. However, I wasn't learning anything new. I always had an interest for VLSI and microelectronics, so I decided to leave and pursue my higher education. My current interest is IC layout design.
+After half a year, I wasn't learning anything new at this company. The work was repetative and it didn't allow me to have free time for personal projects. I always had an interest for VLSI and microelectronics, so I decided to leave and pursue my higher education after a year and a half. My current interest is IC layout design.
