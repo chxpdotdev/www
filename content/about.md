@@ -6,7 +6,7 @@ aliases = ["about-me", "about-javacafe", "about-gokul", "contact"]
 author = "Gokul Swami"
 +++
 
-I'm an student living in San Diego, CA. I'm doing my Master's in EE with a focus in VLSI Systems.
+I'm a student living in San Diego, CA. I'm doing my Master's in EE with a focus in VLSI Systems.
 
 My undergraduate degree was also in Electrical Engineering. After I received my Bachelor's, I went to work as an Engineer for a utility company on electric grid operations. After a few months, I left to work for an aerospace and defense company as an Embedded Software Engineer for a little over a year.
 
