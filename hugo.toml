@@ -1,5 +1,5 @@
-baseURL = 'https://gokulswam.me/'
-title = "Gokul Swami"
+baseURL = 'https://javacafe.tech/'
+title = "Gokul Swami's Website"
 theme = 'risotto'
 author = "Gokul Swami"
 copyright = "© Gokul Swami."
@@ -36,12 +36,12 @@ logo = "☕"
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/gokulswam"
+url = "https://github.com/javacafe01"
 
 [[params.socialLinks]]
-icon = "fa-brands fa-mastodon"
-title = "Mastodon"
-url = "https://fosstodon.org/@gokulswam"
+icon = "fa-brands fa-bluesky"
+title = "bluesky"
+url = "https://bsky.app/profile/javacafe.tech"
 
 [[params.socialLinks]]
 icon = "fa-solid fa-image"
