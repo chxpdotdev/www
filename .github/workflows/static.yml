@@ -48,7 +48,7 @@ jobs:
       - name: Clean and upload files from nix build result directory
         run: |
           ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
-          scp -r ./result/* ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }}:~/html/
+          scp -p -r ./result/* ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }}:~/html/
   
       - name: Run mkhomepg -p on SDF
         run: |
