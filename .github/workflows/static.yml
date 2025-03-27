@@ -38,15 +38,18 @@ jobs:
       - name: Build site with Nix
         run: nix build .
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan ${{ secrets.SDF_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload result directory from nix build
-          path: './result'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Clean and upload files from nix build result directory
+        run: |
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
+          scp -r ./result/* ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }}:~/html/
+  
+      - name: Run mkhomepg -p on SDF
+        run: |
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
