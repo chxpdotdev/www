@@ -6,7 +6,7 @@
 Welcome to my website! I post blogs and my projects here.
 
 ## Projects Overview
-- [CMOS Inverter Design and Layout](/projects/inverter) (draft)
+- [CMOS Inverter Design and Layout](/projects/cmos_inverter)
 
 ## Systems
 
