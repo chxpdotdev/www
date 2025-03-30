@@ -6,6 +6,7 @@
 Welcome to my website! I post blogs and my projects here.
 
 ## Projects Overview
+- [CMOS NAND and NOR Design and Layout](/projects/cmos_nand_nor) (draft)
 - [CMOS Inverter Design and Layout](/projects/cmos_inverter)
 
 ## Systems
