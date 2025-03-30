@@ -10,7 +10,7 @@ Implemented with TSMC's 0.4-micron process.
 
 ## Background and Purpose
 
-An inverter in digital logic desing is essentially a NOT gate. It inverts the input signal. Here is the truth table for it:
+An inverter in digital logic is essentially a NOT gate. It inverts the input signal. Here is the truth table for it:
 
 | Input | Output |
 | --- | --- |
