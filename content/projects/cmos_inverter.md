@@ -17,7 +17,7 @@ An inverter in digital logic is essentially a NOT gate. It inverts the input sig
 | 0 | 1 |
 | 1 | 0 |
 
-CMOS technology is considered to be excellent when implementing any inverting logic, like NOT gates, due to its lower power useage, scalability, and high noise immunity.
+CMOS technology is considered to be excellent when implementing any inverting logic, like NOT gates, due to its lower power usage, scalability, and high noise immunity.
 
 This project is about a *matched* CMOS inverter, meaning that the pull-up (PMOS) and pull-down (NMOS) transistors are sized and designed to have similar electrical characteristics to ensure a balanced performance and equal propogation delays for both low-to-high and high-to-low transitions.
 
