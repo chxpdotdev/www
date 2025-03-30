@@ -2,14 +2,13 @@
 date = '2025-01-26T23:28:43-08:00'
 draft = false
 title = 'NixOS, the ~~best~~ most overhyped distro for desktop'
-description = "Is declarative package management worth it?" 
+description = 'Is declarative package management worth it?'
 author = 'Gokul Swami'
 +++
 
 ## Nix, the best package manager
 
 Nix is amazing. It's also extremely difficult to learn. The learning curve is steep and you get the added bonus of potholes and cracks along that hill that will send you tumbling all the way down. But, man, it's really satisfying and useful once you get near the top. You feel like an absolute gigachad.
-
 
 ![Nix Chad](/images/nix_chad.webp)
 
