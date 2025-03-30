@@ -25,10 +25,10 @@ This project is about a *matched* CMOS inverter, meaning that the pull-up (PMOS)
 
 The following is the schematic for the matched inverter. Using the fact that we want a *r* value of 1, we can use the circuit parameter *k* from each transistor that was found when simulating a minimally sized inverter to find our sizing requirements. We find that the PMOS needs to have a width 3.4 times the original to compensate, hence 2 micrometers. 
 
-![matched CMOS inverter schematic](/images/virtuoso/matched_inverter_schematic.png?width=600)
+![matched CMOS inverter schematic](/images/virtuoso/matched_inverter_schematic.png)
 
 ## Layout
 
 The following is the layout for the matched inverter. Both DRC and LVS were successful.
 
-![matched CMOS inverter layout](/images/virtuoso/matched_inverter_layout.png?width=600)
+![matched CMOS inverter layout](/images/virtuoso/matched_inverter_layout.png)
