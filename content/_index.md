@@ -1,7 +1,5 @@
 # hi 👋
 
----
-
 ![profile picture](/images/pfp_nobg.png?width=100)   
 Welcome to my website! I post blogs and my projects here.
 
