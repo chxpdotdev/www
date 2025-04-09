@@ -1,5 +1,5 @@
 baseURL = 'https://javacafe.sdf.org/'
-title = "Gokul Swami's Website"
+title = "javacafe.sdf.org"
 theme = 'risotto'
 author = "Gokul Swami"
 copyright = "© Gokul Swami."
@@ -21,7 +21,7 @@ pagerSize = 3
 noindex = false
 
 [params.theme]
-palette = "base16-houseki"
+palette = "base16-houseki-black"
 
 [params.about]
 title = "AKA javacafe(01)"
@@ -57,11 +57,6 @@ url = "https://pixelfed.social/memelovesfeet"
 icon = "fa-solid fa-message"
 title = "Matrix"
 url = "https://matrix.to/#/@javacafe:matrix.org"
-
-[[params.socialLinks]]
-icon = "fa-brands fa-discord"
-title = "Discord"
-url = "https://discordapp.com/users/422199626850893824"
 
 [menu]
   
