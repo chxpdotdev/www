@@ -1,5 +1,3 @@
-# hi 👋
-<br/>
 ## Projects Overview
 - [CMOS NAND and NOR Design and Layout](/projects/cmos_nand_nor) (draft)
 - [CMOS Inverter Design and Layout](/projects/cmos_inverter)
