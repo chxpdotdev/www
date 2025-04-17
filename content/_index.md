@@ -4,7 +4,7 @@
 
 ## Systems
 
-My configuration files are [here](https://github.com/javacafe01/nix-config).
+My configuration files are [here](https://github.com/gokulswam/nix-config).
 
 ### Framework 13
 

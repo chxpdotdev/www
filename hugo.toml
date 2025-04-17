@@ -1,5 +1,5 @@
-baseURL = 'https://javacafe.sdf.org/'
-title = "javacafe.sdf.org"
+baseURL = 'https://gokulswam.ee/'
+title = "gokulswam.ee"
 theme = 'risotto'
 author = "Gokul Swami"
 copyright = "© Gokul Swami."
@@ -25,7 +25,7 @@ palette = "base16-houseki-black"
 
 [params.about]
 title = "AKA javacafe(01)"
-description = "my website and blog *maybe?* (more like rants)"
+description = "my website and project portfolio"
 logo = "☕"
 
 # Sidebar: social links
@@ -41,12 +41,12 @@ url = "https://github.com/javacafe01"
 [[params.socialLinks]]
 icon = "fa-brands fa-bluesky"
 title = "bluesky"
-url = "https://bsky.app/profile/javacafe.sdf.org"
+url = "https://bsky.app/profile/gokulswam.ee"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-mastodon"
 title = "mastodon"
-url = "https://mastodon.sdf.org/@javacafe01"
+url = "https://hachyderm.io/@gokulswam"
 
 [[params.socialLinks]]
 icon = "fa-solid fa-image"
@@ -59,7 +59,6 @@ title = "Matrix"
 url = "https://matrix.to/#/@javacafe:matrix.org"
 
 [menu]
-  
   [[menu.main]]
     identifier = "about"
     name = "About"
