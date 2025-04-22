@@ -21,7 +21,7 @@ pagerSize = 3
 noindex = false
 
 [params.theme]
-palette = "base16-houseki-black"
+palette = "base16-houseki"
 
 [params.about]
 title = "AKA javacafe(01)"
