@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dead-simple-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1745164822,
+        "narHash": "sha256-LDJPYqJ0U4oPgdiNJYmZZRaCAA0i8m+Z5PfboMN6VD8=",
+        "owner": "barklan",
+        "repo": "hugo-dead-simple",
+        "rev": "57184acbfdc1077a28da9b00f0fea6f17123653d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "barklan",
+        "repo": "hugo-dead-simple",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -34,27 +50,11 @@
         "type": "github"
       }
     },
-    "risotto-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1729858252,
-        "narHash": "sha256-aRy9+8MwUNAgIjucD2LDuPRNfI4lcH1+ynlF3qstClw=",
-        "owner": "joeroe",
-        "repo": "risotto",
-        "rev": "058d18503c151056c5e9fc71259d155b112b9dd1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "joeroe",
-        "repo": "risotto",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
+        "dead-simple-src": "dead-simple-src",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs",
-        "risotto-src": "risotto-src"
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {

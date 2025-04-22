@@ -1,0 +1,61 @@
+baseURL: "https://gokulswam.ee/"
+languageCode: en-us
+title: "gokulswam.ee"
+theme: dead-simple
+enableGitInfo: true
+menu:
+  main:
+    - name: "<u>H</u>ome"
+      url: /
+      weight: 1
+    - name: "<u>A</u>bout"
+      url: "/about"
+      weight: 2
+    - name: "<u>P</u>rojects"
+      url: "/projects"
+      weight: 3
+
+params:
+  author:
+    name: Gokul Swami
+
+  description: "Gokul Swami's site"
+  noSearch: true
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: false
+    goldmark:
+      extensions:
+        passthrough:
+          delimiters:
+            block:
+            - - \[
+              - \]
+            - - $$
+              - $$
+            inline:
+            - - \(
+              - \)
+          enable: true
+      renderer:
+        unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  page:
+    - html
+
+services:
+  rss:
+    limit: -1
+
+module:
+  imports:
+    - path: github.com/hugomods/images
