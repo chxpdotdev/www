@@ -2,7 +2,7 @@ baseURL: "https://gokulswam.ee/"
 languageCode: en-us
 title: "gokulswam.ee"
 theme: dead-simple
-enableGitInfo: true
+
 menu:
   main:
     - name: "<u>H</u>ome"

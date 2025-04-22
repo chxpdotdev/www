@@ -3,4 +3,4 @@
 
 ### credits
 - [hugo](https://github.com/gohugoio/hugo)
-- [risotto](https://github.com/joeroe/risotto)
+- [hugo-dead-simple](https://github.com/barklan/hugo-dead-simple)
