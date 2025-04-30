@@ -1,5 +1,5 @@
 ## Projects Overview
-- [CMOS NAND and NOR Design and Layout](/projects/cmos_nand_nor) (draft)
+- [PTL 2-Bit Full Adder Design and Layout](/projects/ptl_2bit_full_adder) (draft)
 - [CMOS Inverter Design and Layout](/projects/cmos_inverter)
 
 ## Systems
