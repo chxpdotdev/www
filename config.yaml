@@ -1,6 +1,6 @@
-baseURL: "https://p.chxp.dev"
+baseURL: "http://chxp.dev/projects/"
 languageCode: en-us
-title: "p.chxp.dev"
+title: "chxp.dev/projects"
 theme: dead-simple
 
 menu:
