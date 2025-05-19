@@ -1,18 +1,18 @@
 {
   "nodes": {
-    "dead-simple-src": {
+    "congo-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1745164822,
-        "narHash": "sha256-LDJPYqJ0U4oPgdiNJYmZZRaCAA0i8m+Z5PfboMN6VD8=",
-        "owner": "barklan",
-        "repo": "hugo-dead-simple",
-        "rev": "57184acbfdc1077a28da9b00f0fea6f17123653d",
+        "lastModified": 1741645399,
+        "narHash": "sha256-vSrwK0Z4oEIid/J+vwwYNVqFr7i4V6PN8MccOT2x+ek=",
+        "owner": "jpanther",
+        "repo": "congo",
+        "rev": "343ba2a4ae2b7cfec5a0873320e075c894bff304",
         "type": "github"
       },
       "original": {
-        "owner": "barklan",
-        "repo": "hugo-dead-simple",
+        "owner": "jpanther",
+        "repo": "congo",
         "type": "github"
       }
     },
@@ -52,7 +52,7 @@
     },
     "root": {
       "inputs": {
-        "dead-simple-src": "dead-simple-src",
+        "congo-src": "congo-src",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       }

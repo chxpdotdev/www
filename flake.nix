@@ -6,8 +6,8 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # Import theme
-    dead-simple-src = {
-      url = "github:barklan/hugo-dead-simple";
+    congo-src = {
+      url = "github:jpanther/congo";
       flake = false;
     };
   };
@@ -50,7 +50,7 @@
 
             buildPhase = ''
               mkdir -p themes
-              ln -s ${inputs.dead-simple-src} themes/dead-simple
+              ln -s ${inputs.congo-src} themes/congo
               hugo mod vendor
             '';
 
@@ -68,7 +68,7 @@
           };
         in ''
           mkdir -p themes
-          ln -s ${inputs.dead-simple-src} themes/dead-simple
+          ln -s ${inputs.congo-src} themes/congo
           ln -s ${hugoVendor} _vendor
           hugo --minify
         '';
@@ -90,10 +90,10 @@
 
       devShells.default = pkgs.mkShell {
         buildInputs = nativeBuildInputs;
-        
+
         shellHook = ''
           mkdir -p themes
-          ln -sf ${inputs.dead-simple-src} themes/dead-simple
+          ln -sf ${inputs.congo-src} themes/congo
         '';
       };
     });

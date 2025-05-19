@@ -1,0 +1,24 @@
+languageCode = "en-US"
+languageName = "English (U.S.)"
+languageDirection = "ltr"
+weight = 1
+
+title = "gokulswam.ee"
+copyright = "&copy; 2025 Gokul Swami"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  mainSections = ["projects"]
+  description = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+
+[params.author]
+  name = "Gokul Swami"
+  image = "img/pfp.png"
+  headline = "Electrical Engineering Graduate Student"
+  bio = "MSEE student studying VLSI"
+  links = [
+    { mastodon = "https://hachyderm.io/@gokulswam" },
+    { bluesky = "https://bsky.app/profile/gokulswam.ee" },
+    { x-twitter = "https://x.com/gokulswam" },
+  ]
