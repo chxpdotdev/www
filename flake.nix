@@ -64,7 +64,7 @@
             # 1. Replace the existing hash with `pkgs.lib.fakeHash`
             # 2. Run `nix build`
             # 3. Substitute the new hash
-            outputHash = "sha256-tW11HunXUUvv/HQA+raj6gV0f47aeb5Ay37FtGWkzCo=";
+            outputHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
           };
         in ''
           mkdir -p themes
