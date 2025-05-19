@@ -1,6 +1,6 @@
 # site
-[link](https://javacafe.sdf.org)
+[link](https://gokulswam.github.io/www)
 
 ### credits
 - [hugo](https://github.com/gohugoio/hugo)
-- [hugo-dead-simple](https://github.com/barklan/hugo-dead-simple)
+- [congo](https://github.com/jpanther/congo)
