@@ -18,6 +18,6 @@ copyright = "&copy; 2025 Gokul Swami"
   headline = "Electrical Engineering Graduate Student"
   bio = "MSEE student studying VLSI"
   links = [
-    { mastodon = "https://social.vivaldi.net/@javacafe01" },
+    { mastodon = "https://mas.to/@javacafe" },
     { bluesky = "https://bsky.app/profile/javacafe.tech" },
   ]

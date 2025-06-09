@@ -21,6 +21,14 @@ CMOS technology is considered to be excellent when implementing any inverting lo
 
 This project is about a *matched* CMOS inverter, meaning that the pull-up (PMOS) and pull-down (NMOS) transistors are sized and designed to have similar electrical characteristics to ensure a balanced performance and equal propogation delays for both low-to-high and high-to-low transitions.
 
+## Sizing
+
+\[
+\begin{aligned}
+i_D &= \frac{1}{2} k'n (\frac{W}{L})(V_{GS} - V_{tn})^2
+\end{aligned}
+\]
+
 ## Schematic
 
 The following is the schematic for the matched inverter. Using the fact that we want a *r* value of 1, we can use the circuit parameter *k* from each transistor that was found when simulating a minimally sized inverter to find our sizing requirements. We find that the PMOS needs to have a width 3.4 times the original to compensate, hence 2 micrometers. 
