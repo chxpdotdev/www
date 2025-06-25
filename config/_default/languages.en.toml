@@ -20,5 +20,4 @@ copyright = "&copy; 2025 Gokul Swami"
   links = [
     { mastodon = "https://mastodon.social/@chxpdev" },
     { bluesky = "https://bsky.app/profile/chxp.dev" },
-    { x-twitter = "https://x.com/chxpdev" },
   ]
