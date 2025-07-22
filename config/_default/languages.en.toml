@@ -18,6 +18,6 @@ copyright = "&copy; 2025 Gokul Swami"
   headline = "Electrical Engineering Graduate Student"
   bio = "MSEE student studying VLSI"
   links = [
-    { mastodon = "https://mastodon.social/@chxpdev" },
+    { mastodon = "https://social.vivaldi.net/@chxpdev" },
     { bluesky = "https://bsky.app/profile/chxp.dev" },
   ]
