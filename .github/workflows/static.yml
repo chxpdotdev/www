@@ -38,17 +38,17 @@ jobs:
       - name: Build site with Nix
         run: nix build .
 
+      - name: Move built files
+        run: |
+          mkdir -p /home/runner/work/_temp/_github_home/build
+          cp -r ./result/* /home/runner/work/_temp/_github_home/build
+          
       - name: Deploy to Netlify (prod)
-        uses: jsmrcaga/action-netlify-deploy@v2.4.0
+        uses: danakim/gh-action-deploy-netlify@master
         with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          build_directory: "result"
-          install_command: |
-            echo 'Skipping install'
-          build_command: |
-            echo 'Skipping build'
+          AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          DEPLOY_PROD: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
