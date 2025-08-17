@@ -45,6 +45,10 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_TO_PROD: true
           build_directory: "result"
+          install_command: |
+            echo 'Skipping install'
+          build_command: |
+            echo 'Skipping build'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
