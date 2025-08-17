@@ -38,19 +38,13 @@ jobs:
       - name: Build site with Nix
         run: nix build .
 
-      - name: Install Netlify CLI
-        run: 'npm i -g netlify-cli'
-
       - name: Deploy to Netlify (prod)
-        env:
+        uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: |
-          ls ./result
-          netlify deploy \
-            --prod \
-            --dir=./result \
-            --message "GitHub Actions deploy $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          NETLIFY_DEPLOY_TO_PROD: true
+          build_directory: "result"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
