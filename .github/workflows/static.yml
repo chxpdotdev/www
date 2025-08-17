@@ -23,7 +23,7 @@ concurrency:
 jobs:
   deploy:
     environment:
-      name: netlify-deploy
+      name: netlify-prod
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
