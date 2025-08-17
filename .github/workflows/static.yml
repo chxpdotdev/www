@@ -47,6 +47,15 @@ jobs:
           # Upload result directory from nix build
           path: './result'
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Install Netlify CLI
+        run: 'npm i -g netlify-cli'
+
+      - name: Deploy to Netlify (prod)
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          netlify deploy \
+            --prod \
+            --dir=./result \
+            --message "GitHub Actions deploy $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
