@@ -42,6 +42,7 @@ jobs:
         run: |
           mkdir -p /home/runner/work/_temp/_github_home/build
           cp -r ./result/* /home/runner/work/_temp/_github_home/build
+          cp ./netlify.toml /home/runner/work/_temp/_github_home/build
           
       - name: Deploy to Netlify (prod)
         uses: danakim/gh-action-deploy-netlify@master
