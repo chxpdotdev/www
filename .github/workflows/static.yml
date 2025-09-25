@@ -26,13 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install rsync
-        run: |
-          if ! command -v rsync >/dev/null 2>&1; then
-            sudo apt update
-            sudo apt install -y rsync
-          fi
-
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       
@@ -49,7 +42,9 @@ jobs:
       - name: Clean and upload files from the nix result directory
         run: |
           ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
-          rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./result/ ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }}:html/
+          OUT="$(readlink -f ./result)"
+          tar -C "$OUT" -cf - . \
+            | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
   
       - name: Set file permissions on SDF host
         run: |
