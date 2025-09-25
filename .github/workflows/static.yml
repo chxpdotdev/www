@@ -45,6 +45,8 @@ jobs:
           OUT="$(readlink -f ./result)"
           tar -C "$OUT" -cf - . \
             | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
+          rm -rf ~/public_html/*
+          cp -r ~/html/* ~/public_html/*
   
       - name: Set file permissions on SDF host
         run: |
