@@ -26,6 +26,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install rsync
+        run: |
+          if ! command -v rsync >/dev/null 2>&1; then
+            sudo apt update
+            sudo apt install -y rsync
+          fi
+
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       
