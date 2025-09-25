@@ -26,12 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
-      
-      - name: Build site with Nix
-        run: nix build .
-
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -43,10 +37,10 @@ jobs:
         run: |
           ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
 
-      - name: Clean and upload files from the nix result directory
+      - name: Clean and upload files
         run: |
           ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
-          OUT="$(readlink -f ./result)"
+          OUT="$(readlink -f ./)"
           tar -C "$OUT" -cf - . \
             | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
   
