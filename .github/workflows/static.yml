@@ -41,7 +41,7 @@ jobs:
 
       - name: Clean and upload files from the nix result directory
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p && rm -rf ~/html/*'
           OUT="$(readlink -f ./result)"
           tar -C "$OUT" -cf - . \
             | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
