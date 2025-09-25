@@ -31,19 +31,19 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan ${{ secrets.SDF_MA_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan ${{ secrets.SDF_HOST }} >> ~/.ssh/known_hosts
 
       - name: Set file permissions on SDF host before
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_MA_HOST }} 'mkhomepg'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
 
       - name: Clean and upload files
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_MA_HOST }} 'rm -rf ~/html/*'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
           OUT="$(readlink -f ./)"
           tar -C "$OUT" -cf - . \
-            | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_MA_HOST }} 'tar -C ~/html -xpf -'
+            | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
   
       - name: Set file permissions on SDF host after
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_MA_HOST }} 'mkhomepg'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
