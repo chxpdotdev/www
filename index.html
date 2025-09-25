@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>gsxnc</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --bg: #000000;
+                --fg: #b6ffb6; /* terminal green */
+                --fg-strong: #00ff88; /* brighter on hover */
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                background: var(--bg);
+                color: var(--fg);
+                font-family:
+                    "VT323", ui-monospace, SFMono-Regular, Menlo, Consolas,
+                    "Liberation Mono", monospace;
+                display: grid;
+                place-items: center;
+                min-height: 100dvh;
+            }
+
+            main {
+                text-align: center;
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: clamp(1.25rem, 4vw, 2rem);
+                margin: 0 0 0.25rem 0;
+                letter-spacing: 0.02em;
+                line-height: 1.1;
+                display: inline-block;
+                position: relative;
+            }
+
+            /* blinking terminal cursor */
+            h1::after {
+                content: "_";
+                display: inline-block;
+                margin-left: 0.2ch;
+                animation: blink 1.1s steps(1, end) infinite;
+            }
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+
+            nav {
+                margin-top: 1.5rem;
+                display: block;
+                text-align: left;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+                margin: 0.2rem 0;
+            }
+
+            a {
+                color: var(--fg);
+                text-decoration: none;
+                padding: 0.1rem 0.2rem;
+                border-bottom: 1px dashed rgba(0, 255, 136, 0.35);
+                transition:
+                    color 120ms linear,
+                    text-shadow 120ms linear,
+                    border-color 120ms linear;
+            }
+
+            a:hover,
+            a:focus {
+                color: var(--fg-strong);
+                border-color: rgba(0, 255, 136, 0.7);
+                outline: none;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                h1::after {
+                    animation: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>gsxnc</h1>
+            <nav aria-label="social links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/gsxnc" rel="me"
+                            >[ GitHub ] github.com/gsxnc</a
+                        >
+                    </li>
+                    <li>
+                        <a rel="me" href="https://social.sdf.org/@gsxnc"
+                            >[ Mastodon ] social.sdf.org/@gsxnc</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://bsky.app/profile/gsxnc.sdf.org"
+                            rel="me"
+                            >[ Bsky ] bsky.app/profile/gsxnc.sdf.org</a
+                        >
+                    </li>
+                    <li>
+                        <a href="mailto:gsxnc@sdf.org"
+                            >[ Email ] gsxnc@sdf.org</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </main>
+        <a target="new" href="http://sdf.org"
+            ><img src="http://sdf.org/sdfbanner.png"
+        /></a>
+    </body>
+</html>
