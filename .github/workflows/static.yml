@@ -18,7 +18,7 @@ jobs:
   deploy:
     environment:
       name: SDF
-      url: https://gsxnc.sdf.org/
+      url: http://gsxnc.tx0.org/
 
     runs-on: ubuntu-latest
 
@@ -41,11 +41,11 @@ jobs:
 
       - name: Clean and upload files from the nix result directory
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/html && rm -rf ~/html/*'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/html && chmod u+wx -R ~/html/* && rm -rf ~/html/*'
           OUT="$(readlink -f ./result)"
           tar -C "$OUT" -cf - . \
             | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/public_html && rm -rf ~/public_html/* ~/public_html/.[!.]* ~/public_html/..?* && cp -a ~/html/. ~/public_html/'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/public_html && chmod u+wx -R ~/public_html/* && rm -rf ~/public_html/* ~/public_html/.[!.]* ~/public_html/..?* && cp -a ~/html/. ~/public_html/'
   
       - name: Set file permissions on SDF host
         run: |
