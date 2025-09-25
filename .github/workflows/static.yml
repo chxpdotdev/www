@@ -39,14 +39,18 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan ${{ secrets.SDF_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Set file permissions on SDF host before
+        run: |
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p; chmod u+wx -R ~/public_html; chmod u+wx -R ~/public_html/*'
+
       - name: Clean and upload files from the nix result directory
         run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/html && chmod u+wx -R ~/html/* && rm -rf ~/html/*'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
           OUT="$(readlink -f ./result)"
           tar -C "$OUT" -cf - . \
             | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'chmod u+wx -R ~/public_html && chmod u+wx -R ~/public_html/* && rm -rf ~/public_html/* ~/public_html/.[!.]* ~/public_html/..?* && cp -a ~/html/. ~/public_html/'
+          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/public_html/* ~/public_html/.[!.]* ~/public_html/..?* && cp -a ~/html/. ~/public_html/'
   
-      - name: Set file permissions on SDF host
+      - name: Set file permissions on SDF host after
         run: |
           ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p; chmod o+rx,o-w ~/public_html'
