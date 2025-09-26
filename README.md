@@ -1,3 +1,3 @@
 # my site
 
-[link](https://gsxnc.sdf.org)
+[link](chxp.dev)
