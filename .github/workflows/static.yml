@@ -1,4 +1,4 @@
-name: Deploy static content to SDF
+name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -8,42 +8,39 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "static"
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
   deploy:
     environment:
-      name: SDF
-      url: https://gsxnc.sdf.org
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan ${{ secrets.SDF_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Set file permissions on SDF host before
-        run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
-
-      - name: Clean and upload files
-        run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'rm -rf ~/html/*'
-          OUT="$(readlink -f ./)"
-          tar -C "$OUT" -cf - . \
-            | ssh -o StrictHostKeyChecking=no ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'tar -C ~/html -xpf -'
-  
-      - name: Set file permissions on SDF host after
-        run: |
-          ssh ${{ secrets.SDF_USER }}@${{ secrets.SDF_HOST }} 'mkhomepg -p'
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
