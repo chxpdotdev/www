@@ -72,6 +72,13 @@
             text-align: left;
         }
 
+        nav h2 {
+            font-size: 1.1rem;
+            margin: 0 0 0.75rem 0;
+            color: var(--fg-strong);
+            letter-spacing: 0.02em;
+        }
+
         ul {
             list-style: none;
             padding: 0;
@@ -100,6 +107,19 @@
             outline: none;
         }
 
+        nav[aria-label="projects"] a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5ch;
+        }
+
+        nav[aria-label="projects"] a::before {
+            content: attr(data-category);
+            flex-shrink: 0;
+            color: var(--fg-strong);
+            width: 20ch;
+        }
+
         @media (prefers-reduced-motion: reduce) {
             h1::after {
                 animation: none;
@@ -110,8 +130,9 @@
 
 <body>
     <main>
-        <h1>chxpdotdev</h1>
+        <h1>chxp, like chip</h1>
         <nav aria-label="social links">
+            <h2>socials</h2>
             <ul>
                 <li>
                     <a href="https://github.com/chxpdotdev" rel="me">[ GitHub ] github.com/chxpdotdev</a>
@@ -122,6 +143,20 @@
                 <li>
                     <a href="https://bsky.app/profile/chxp.dev" rel="me">[ Bsky ]
                         bsky.app/profile/chxp.dev</a>
+                </li>
+            </ul>
+        </nav>
+        <nav aria-label="projects">
+            <h2>projects</h2>
+            <ul>
+                <li>
+                    <a href="" target="_blank" data-category="[ Fixed-Point ]">Implemented fixed-pt arithmetic units in Verilog using Xilinx Vivado and deployed to a Nexys A7-100T FPGA, verified against Matlab reference outputs (TODO)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" data-category="[ Moving Average ]">Sliding-window moving average in Verilog using Xilinx Vivado and deployed to a Nexys A7-100T FPGA, verified against Matlab reference outputs (TODO)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" data-category="[ 2-Bit Full Adder ]">Physical Design of a 2-Bit full adder using TSMC 0.4µm (TODO)</a>
                 </li>
             </ul>
         </nav>
